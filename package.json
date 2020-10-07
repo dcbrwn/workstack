@@ -1,7 +1,7 @@
 {
   "name": "work-stack",
   "version": "1.0.0",
-  "main": "src/index.tsx",
+  "main": "src/index.html",
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.html",

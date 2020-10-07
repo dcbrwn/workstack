@@ -2,6 +2,7 @@ import { h } from "preact";
 import { useMediator } from "../../lib/hooks/useMediator";
 import { Task } from "../../models/Task";
 import { TasksContext, UpdateTask } from "./TasksBlock/context";
+import regularInputs from "../../styles/inputs/regular.module.css";
 
 type Inputs = {
   task: Task;
@@ -21,6 +22,6 @@ export function TaskListItem(inputs: Inputs) {
   };
 
   return inputs.isEditor
-    ? <input value={task.summary} onChange={handleSummaryChanged}/>
+    ? <input class={regularInputs.input} value={task.summary} onChange={handleSummaryChanged}/>
     : <span>{task.summary}</span>
 }

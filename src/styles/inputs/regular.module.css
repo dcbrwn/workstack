@@ -1,0 +1,15 @@
+@value colors: "../colors.css";
+@value space: "../space.css";
+
+.input {
+  composes: font_captions from "../fonts.css";
+
+  @value color_control_bg0, color_fg from colors;
+  @value space_unit from space;
+
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid color_control_bg0;
+  color: color_fg;
+  padding: space_unit;
+}

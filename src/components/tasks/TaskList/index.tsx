@@ -1,16 +1,17 @@
 import { h, Fragment } from "preact";
 import { useState } from "preact/hooks";
-import { useMediator } from "../../lib/hooks/useMediator";
-import { TaskId } from "../../models/Task";
-import { TaskListItem } from "./TaskListItem";
-import { CreateTask, RemoveTask, TasksContext } from "./TasksBlock/context";
+import { useMediator } from "../../../lib/hooks/useMediator";
+import { TaskId } from "../../../models/Task";
+import { TaskListItem } from "../TaskListItem";
+import { CreateTask, RemoveTask, TasksContext } from "../TasksBlock/context";
+import styles from "./styles.module.css";
 
 export function TaskList() {
   const [currentlyEditedTask, editTask] = useState<TaskId | null>(null);
   const [state, put] = useMediator(TasksContext)!;
 
   return <>
-    <ul>
+    <ul class={styles.list}>
       {state?.tasks?.map((task) => {
         const isEditor = task.id === currentlyEditedTask;
 
@@ -31,6 +32,6 @@ export function TaskList() {
       })}
     </ul>
 
-    <button onClick={() => put(new CreateTask())}>Create task</button>
+    <button class={styles.button} onClick={() => put(new CreateTask())}>Create task</button>
   </>
 }

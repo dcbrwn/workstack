@@ -1,0 +1,6 @@
+@use "./fonts";
+
+html, body {
+  font-family: fonts.$monospace;
+  font-size: 14px;
+}

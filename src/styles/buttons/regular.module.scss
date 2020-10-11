@@ -1,0 +1,15 @@
+@use "../colors";
+@use "../space";
+
+.button {
+  border: 0;
+  padding: space.$unit;
+  background-color: colors.$backdrop0;
+  color: colors.$fg;
+  text-transform: uppercase;
+}
+
+.button.negative {
+  background-color: colors.$negative;
+  color: colors.$inv_fg;
+}

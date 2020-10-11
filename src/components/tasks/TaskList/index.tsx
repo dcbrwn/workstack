@@ -4,8 +4,8 @@ import { useMediator } from "../../../lib/hooks/useMediator";
 import { TaskId } from "../../../models/Task";
 import { TaskListItem } from "../TaskListItem";
 import { CreateTask, RemoveTask, TasksContext } from "../TasksBlock/context";
-import styles from "./styles.module.css";
-import regularButtons from "../../../styles/buttons/regular.module.css";
+import styles from "./styles.module.scss";
+import regularButtons from "../../../styles/buttons/regular.module.scss";
 import { classes } from "../../../lib/classes";
 
 export function TaskList() {

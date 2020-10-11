@@ -2,7 +2,7 @@ import { h } from "preact";
 import { useMediator } from "../../lib/hooks/useMediator";
 import { Task } from "../../models/Task";
 import { TasksContext, UpdateTask } from "./TasksBlock/context";
-import regularInputs from "../../styles/inputs/regular.module.css";
+import regularInputs from "../../styles/inputs/regular.module.scss";
 
 type Inputs = {
   task: Task;

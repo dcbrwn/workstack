@@ -16,6 +16,7 @@
     "postcss-modules-values": "^3.0.0",
     "preact": "^10.5.2",
     "rxjs": "^6.6.3",
+    "sass": "^1.27.0",
     "typescript": "^4.0.3"
   },
   "devDependencies": {

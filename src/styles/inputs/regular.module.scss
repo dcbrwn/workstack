@@ -1,0 +1,10 @@
+@use "../colors";
+@use "../space";
+
+.input {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid colors.$backdrop0;
+  color: colors.$fg;
+  padding: space.$unit;
+}

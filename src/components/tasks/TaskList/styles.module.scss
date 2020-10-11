@@ -1,8 +1,11 @@
+@use "../../../styles/space";
+
 .list {
   padding: 0;
   list-style: none;
+  margin: (space.$unit * 2) 0;
 }
 
-.button {
-  background-color: white;
+.item {
+  margin: space.$unit;
 }

@@ -4,6 +4,4 @@ import { TasksBlock } from "./components/tasks/TasksBlock";
 import "./styles/reset";
 import "./styles/global";
 
-render((
-  <TasksBlock />
-), document.body);
+render(<TasksBlock />, document.body);

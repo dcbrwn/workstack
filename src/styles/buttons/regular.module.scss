@@ -1,7 +1,10 @@
 @use "../colors";
 @use "../space";
+@use "../fonts";
 
 .button {
+  cursor: pointer;
+  font-family: fonts.$monospace;
   border: 0;
   padding: space.$unit;
   background-color: colors.$backdrop0;

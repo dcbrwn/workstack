@@ -1,6 +1,6 @@
 import { Immutable } from "immer";
-import { Context } from "preact";
-import { useContext } from "preact/hooks";
+import { Context, useContext, useMemo } from "react";
+import { startWith } from "rxjs/operators";
 import { Mediator } from "../mediator";
 import { observe } from "./observe";
 
@@ -14,7 +14,14 @@ export function useMediator<Actions, State>(contextName: Context<Mediator<Action
     return undefined;
   }
 
-  const [state$, put] = context;
+  const [state$, put, getCurrentState] = context;
 
-  return [observe(state$), put];
+  const instanceState$ = useMemo(() => {
+    return state$.pipe(startWith(getCurrentState()));
+  }, [state$]);
+
+  return [
+    observe(instanceState$),
+    put,
+  ];
 }

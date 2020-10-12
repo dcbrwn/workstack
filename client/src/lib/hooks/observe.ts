@@ -1,4 +1,4 @@
-import { useEffect, useState } from "preact/hooks";
+import { useEffect, useState } from "react";
 import { Observable } from "rxjs";
 
 export function observe<T>(observable: Observable<T>): T {

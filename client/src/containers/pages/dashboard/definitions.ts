@@ -1,4 +1,4 @@
-import { createContext } from "preact";
+import { createContext } from "react";
 import { Task, TaskId } from "workstack-common";
 import { Mediator } from "../../../lib/mediator";
 

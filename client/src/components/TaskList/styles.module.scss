@@ -2,6 +2,7 @@
 
 .tasklist {
   .task {
+    font-size: common.$unit * 3;
     .taskNumber {
       color: common.$fg_muted;
     }

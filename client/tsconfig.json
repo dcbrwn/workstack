@@ -19,6 +19,6 @@
   },
   "include": [
     "src/**/*.tsx",
-    "src/**/*.ts", "../common/commons.ts"
+    "src/**/*.ts"
   ]
 }

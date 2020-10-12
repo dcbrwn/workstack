@@ -1,18 +1,16 @@
-@use "../colors";
-@use "../space";
-@use "../fonts";
+@use "../common";
 
 .button {
   cursor: pointer;
-  font-family: fonts.$monospace;
+  font-family: common.$monospace;
   border: 0;
-  padding: space.$unit;
-  background-color: colors.$backdrop0;
-  color: colors.$fg;
+  padding: common.$unit;
+  background-color: common.$backdrop0;
+  color: common.$fg;
   text-transform: uppercase;
 }
 
 .button.negative {
-  background-color: colors.$negative;
-  color: colors.$inv_fg;
+  background-color: common.$negative;
+  color: common.$inv_fg;
 }

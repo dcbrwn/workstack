@@ -1,0 +1,9 @@
+@use "../../styles/common.scss";
+
+.tasklist {
+  .task {
+    .taskNumber {
+      color: common.$fg_muted;
+    }
+  }
+}

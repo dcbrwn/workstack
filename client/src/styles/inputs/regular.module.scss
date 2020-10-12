@@ -1,10 +1,9 @@
-@use "../colors";
-@use "../space";
+@use "../common";
 
 .input {
   box-sizing: border-box;
   background-color: transparent;
-  border: 2px solid colors.$backdrop0;
-  color: colors.$fg;
-  padding: space.$unit;
+  border: 2px solid common.$backdrop0;
+  color: common.$fg;
+  padding: common.$unit;
 }

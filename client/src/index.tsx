@@ -1,7 +1,8 @@
 import { h, render } from "preact";
-import { TasksBlock } from "./components/tasks/TasksBlock";
 
-import "./styles/reset";
-import "./styles/global";
+import "./styles/reset.scss";
+import "./styles/global.scss";
 
-render(<TasksBlock />, document.body);
+import { DashboardPage } from "./containers/pages/dashboard";
+
+render(<DashboardPage />, document.body);

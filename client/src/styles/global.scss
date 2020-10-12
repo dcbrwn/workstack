@@ -1,6 +1,6 @@
-@use "./fonts";
+@use "./common";
 
 html, body {
-  font-family: fonts.$monospace;
+  font-family: common.$monospace;
   font-size: 14px;
 }

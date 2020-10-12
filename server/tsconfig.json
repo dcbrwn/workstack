@@ -8,5 +8,10 @@
     "esModuleInterop": true,
 
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "../common/index.ts"
+  ]
 }

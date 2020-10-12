@@ -1,0 +1,25 @@
+@use "../../../styles/common";
+
+.dashboard {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: (common.$unit * 60) auto;
+  grid-template-rows: (common.$unit * 30) auto;
+  grid-template-areas:
+    "tasklist timer"
+    "tasklist log"
+  ;
+
+  .tasklist {
+    grid-area: tasklist;
+  }
+
+  .timer {
+    grid-area: timer;
+  }
+
+  .log {
+    grid-area: log;
+  }
+}
